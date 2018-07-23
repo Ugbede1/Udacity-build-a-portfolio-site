@@ -1,0 +1,243 @@
+/**
+ * TABLE OF CONTENTS:
+ *
+ *  0. GLOBAL
+ *  1. HELPERS
+ *  2. PROFILE
+ *  3. PROJECTS
+ *  4. FOOTER
+ *  5. RESPONSIVE
+ *    - 5.1. LARGE DEVICES, WIDE SCREENS
+ *    - 5.2. MEDIUM DEVICES, DESKTOPS
+ *    - 5.3. SMALL DEVICES, TABLETS LANDSCAPE
+ *    - 5.4. SMALL DEVICES, TABLETS PORTRAIT
+ *    - 5.5. EXTRA SMALL DEVICES, PHONES
+ *    - 5.6. CUSTOM, IPHONE RETINA
+ */
+
+/* ==========================================================================
+   0. GLOBAL
+   ========================================================================== */
+body {
+  padding: 20px 0;
+  font: 300 14px "aria-expanded", sans-serif;
+  color: #666756;
+  background: #fff;
+}
+
+/* ==========================================================================
+   1. HELPERS
+   ========================================================================== */
+.hRule {
+     padding: 1px;
+      border-top: 2px solid #7d97ad;
+   }
+
+.text-thin {
+  font-family: Monoton;
+  font-size: 20px;
+  margin: 0.2em;
+  color: #ff9999;
+  font-weight: 100;
+}
+
+.blink_text {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    animation-name: blinker;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    color: #f3402d;
+    font-family: Comic Sans MS;
+}
+
+@-moz-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1.0; }
+}
+
+/* ==========================================================================
+   2. PROFILE
+   ========================================================================== */
+.profile {
+  margin-top: 10px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.profile-name {
+  margin: 0;
+  font-size: 3em;
+  font-family: Monoton;
+  color: #ff9999;
+}
+
+.profile-job{
+  margin: 0;
+  font-size: 1.1em;
+  font-family: Comic Sans MS;
+}
+
+/* ==========================================================================
+   3. PROJECTS
+   ========================================================================== */
+.project {
+  text-align: center;
+}
+
+.project-title {
+  color: #666756;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.project-link {
+  font-size: 1.143em;
+  color: #666756;
+}
+
+/* ==========================================================================
+   4. FOOTER
+   ========================================================================== */
+.footer {
+  margin-top: 50px;
+  font-size: 1.143em;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+   opacity: 0.7;
+}
+
+.love {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  font-size: 1em;
+  color: #e74c3c;
+  transform: scale(0.9);
+  animation: love 0.5s infinite linear alternate-reverse;
+}
+
+@keyframes love {
+  to {
+    transform: scale(1.2);
+  }
+}
+
+/* ==========================================================================
+   5. RESPONSIVE
+   ========================================================================== */
+
+/* 5.1 LARGE DEVICES, WIDE SCREENS
+   ========================================================================== */
+
+/*@media only screen and (max-width: 1200px) {}*/
+
+/* 5.2 MEDIUM DEVICES, DESKTOPS
+   ========================================================================== */
+
+@media only screen and (max-width: 992px) {
+  .profile {
+    text-align: center;
+  }
+
+  .my-profile {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* 5.3 SMALL DEVICES, TABLETS LANDSCAPE
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+  .profile {
+    text-align: center;
+  }
+
+  .my-profile {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* 5.4 SMALL DEVICES, TABLETS PORTRAIT
+   ========================================================================== */
+
+@media only screen and (max-width: 600px) {
+  .profile {
+    text-align: center;
+  }
+
+  .my-profile {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .profile-name {
+    font-size: 2.5em;
+  }
+}
+
+/* 5.5 EXTRA SMALL DEVICES, PHONES
+   ========================================================================== */
+
+@media only screen and (max-width: 480px) {
+  .profile {
+    text-align: center;
+  }
+
+  .my-profile {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .profile-name {
+    font-size: 2.50em;
+  }
+}
+
+/* 5.6 CUSTOM, IPHONE RETINA
+   ========================================================================== */
+
+@media only screen and (max-width: 360px) {
+  .profile {
+    text-align: center;
+  }
+  .my-profile {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .profile-name {
+    font-size: 2.50em;
+  }
+}
